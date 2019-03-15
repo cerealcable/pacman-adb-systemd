@@ -1,0 +1,5 @@
+post_install() {
+    systemctl daemon-reload
+    systemctl enable adb.service
+    systemctl start adb.service
+}
